@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(2, 2, 71);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    background: linear-gradient(0deg, rgba(64, 1, 30, 0.358), rgba(0, 20, 66, 0.841)), url("../images/גמד\ מתקדם.jpg");
+    background-size: cover;
+    max-width: 100%;
+    max-height:  100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    /* justify-content: center; */
+    height: 100vh;
+    z-index: 5;
+}
+h1{
+  font-family: 'Krona One', sans-serif;
+  color: rgba(255, 255, 255, 0);
+  font-size: 60px;
+  text-shadow: 0 0 50px #16012fd3, 0 0 10px #ff006fe9;
+  -webkit-text-stroke-width: 0.005px;
+   -webkit-text-stroke-color: rgb(255, 0, 89);
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 68px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a0a0a04d;
+    color: rgb(70, 70, 70);
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 5;
+
+  }
+  
+  .slider:before {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "sign up";
+    height: 52px;
+    width: 104px;
+    left: 8px;
+    bottom: 8px;
+    border-radius: 50px !important;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-width: 2px;
+border-style: solid;
+    color:rgb(47, 255, 71);
+    z-index: 5;
+
+  }
+  
+.switch_box:checked + .slider {
+    background-color: #8888885f;
+  }
+
+/* .switch_box:focus + .slider {
+    box-shadow: 0 0 1px #f3f321;
+  } */
+  
+  .switch_box:checked + .slider:before {
+    transform: translateX(120px);
+  }
+  .switch_box:checked + .slider:before{
+    content: "log in";
+    color:rgb(248, 3, 97);
+    background-color: rgba(247, 5, 77, 0) !important;
+  }
+  
+
+  .slider.round {
+    border-radius: 100px;
+  }
+
+.login{
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    min-width: 30vw;
+    z-index: 5;
+
+}
+.input-container i{
+    color: #d9d9d9;
+   padding-left: 20px;
+    text-align: center;
+}
+.input-container{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    background-color: rgba(255, 255, 255, 0.247);
+    margin-bottom: 15px;
+    border-radius: 100px;
+    padding: 5px;
+
+
+}
+.input-container:focus{
+    border: 2px solid dodgerblue;
+}
+input::placeholder{
+color: #d9d9d9;
+}
+input {
+    background-color: rgba(240, 248, 255, 0);
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 100px;
+    border-style: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+}
+.btnLog,.btnSign{
+    font-family: 'Quicksand', sans-serif;
+    min-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    border-radius: 100px;
+    border-style: none;
+    padding: 20px;
+background-color: rgb(201, 0, 90);
+color: white;
+cursor: pointer;
+}
+.btnLog:hover{
+  background-color: #41ff02af;
+}
+.btnSign:hover{
+  background-color: rgb(201, 0, 90) !important;
+}
+.signForm .btnSign{
+  background-color: #41ff02af;
+
+}
+.input-container  input:focus{
+}
+form h2{
+  font-size: 20px;
+  text-align: center;
+  color: rgb(144, 1, 1);
+  display: none;
+  
+}

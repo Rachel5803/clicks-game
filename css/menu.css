@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(2, 2, 71);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    background: linear-gradient(0deg, rgba(64, 1, 30, 0.358), rgba(0, 20, 66, 0.841)), url("../images/backgroundGame_Page_2.jpg");
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-position: 500px;
+    animation-name: move_background;
+    
+}
+
+header {
+    background-color: rgb(255, 0, 111);
+    text-align: center;
+    color: aliceblue;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+
+}
+header a,header i{
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgb(139, 0, 111);
+}
+.nameTxt{
+    font-size: 30px;
+    font-weight: 100;
+}
+.scoreTxt{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.scoreTxt img{
+    width: 40px;
+    margin-left: 10px;
+}
+.gameMenu {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* //min-height: 80vh; */
+    flex-wrap: wrap;
+    flex-basis: 40vw;
+    gap: 20px;
+    
+}
+.gameMenu  h1{
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+.game {
+    position: relative;
+    min-height: 200px;
+    min-width: 500px;
+    /* flex-grow: 1; */
+    background-color: rgba(224, 98, 172, 0.323);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: transform 1s, opacity 1s, background-color 1s;
+border: solid 2px rgb(255, 0, 111);
+
+}
+
+.levelsWrap {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* .game:hover .levelsWrap {
+    display: flex;
+} */
+
+/* .game:hover h1 {
+    display: none;
+} */
+
+/* .game:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    transform: translateY(-5px);
+    transition-property: all;
+    transition-duration: 1s;
+} */
+
+.btnLevel {
+    font-family: 'Quicksand', sans-serif !important;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    background-color: rgba(254, 254, 254, 0.403);
+    margin-bottom: 10px;
+    border-radius: 100px;
+    color: rgb(255, 0, 111);
+    border-style: solid;
+    border-color: rgb(255, 0, 111);
+    border-width: 1px;
+    height: 20%;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 100;
+}
+.btnLevel:hover{
+    background-color: rgb(255, 0, 111) ;
+    color: white;
+}
+
+i {
+    font-size: 100px;
+    color: rgba(214, 214, 214, 0.362);
+}
+.g1 .flip-box-front {
+    background: linear-gradient(0deg, rgba(64, 1, 30, 0.358), rgba(0, 20, 66, 0.841)), url(../images/gameclick.png);
+
+background-size: 700px; 
+   background-position:top;
+}
+.g2 .flip-box-front {
+    background: linear-gradient(0deg, rgba(64, 1, 30, 0.358), rgba(0, 20, 66, 0.841)), url(../images/unnamed.webp);
+
+ background-size: cover; 
+   background-position:center;
+}
+.g3 .flip-box-front {
+    background: linear-gradient(0deg, rgba(64, 1, 30, 0.358), rgba(0, 20, 66, 0.841)), url(../images/candy_crash.jpg);
+
+background-size: cover; 
+   background-position:center;
+}
+.g4 .flip-box-front {
+    background: linear-gradient(0deg, rgba(64, 1, 30, 0.358), rgba(0, 20, 66, 0.841)), url(../images/packman_1.jpg);
+
+   background-size: cover; 
+   background-position:bottom;
+}
+.g1 {
+    background-color: rgba(0, 255, 255, 0.722);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.g2 {
+    background-color: rgba(0, 255, 17, 0.722);
+    animation-name: floating;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.g3 {
+    background-color: rgba(255, 0, 81, 0.722);
+
+    animation-name: floating;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.g4 {
+    background-color: rgba(255, 0, 183, 0.722);
+
+
+    animation-name: floating;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border-style: none;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    border-radius: 30px;
+    
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: rgba(255, 255, 255, 0.267);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 30px;
+  }
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-back {
+    transform: rotateX(180deg);
+  }
+
+

@@ -1,0 +1,130 @@
+.winScreen{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    background-color: rgba(78, 0, 18, 0.829);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    width: 50vh;
+    height: 70vh;
+    background-color: rgba(8, 214, 255, 0.622);
+    max-width: 80%;
+    padding: 50px;
+    border-radius: 40px;
+    border-style: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+z-index: 2;
+border-style: solid;
+border-color:rgb(38, 255, 0);}
+.winScreen h1{
+    font-size: 30px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 100;
+    color:rgba(11, 0, 79, 0.466);
+position: absolute;
+top: -7vh;
+background-color: greenyellow;
+border-radius:100px;
+padding: 20px;
+width: 300px;
+text-align: center;
+}
+.winScreen h2{
+    font-size: 30px;
+    font-weight: 100;
+    color:rgb(255, 255, 255);
+
+}
+.winScreen ul{
+    width: 100%;
+    list-style: none;
+}
+.winScreen li{
+    width: 90%;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    background-color: rgba(255, 255, 255, 0.247);
+    margin-bottom: 15px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.winScreen li i{
+    margin-right: 20px;
+color: rgba(244, 236, 238, 0.929); 
+/* background-color: rgba(4, 150, 86, 0.424);    */
+padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(226, 255, 8, 0.3);
+
+}
+.winScreen li .name_user{
+    font-size: 20px;
+    font-weight: 900;
+}
+.winScreen li .score_user{
+    background-color: rgba(253, 0, 101, 0.854);   
+padding-left: 10px;
+padding-right: 10px;
+height: 60px;
+width: 50px;
+border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.winScreen li .score_user img{
+    width: 20px;
+    
+}
+.starsWrapper img{
+    max-width: 100%;
+    width:50px ;
+}
+.glow{
+    position: absolute;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glow img{
+    opacity: 0.4;
+    width: 80%;
+    z-index: 1;
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
+}
+
+@-moz-keyframes spin {
+100% {
+    -moz-transform: rotate(360deg); }
+
+}
+
+@-webkit-keyframes spin {
+100% {
+    -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin { 100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+}
